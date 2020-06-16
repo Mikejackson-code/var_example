@@ -1,4 +1,4 @@
-
+const TODAYS_THOUGHT = process.env.TODAYS_THOUGHT;
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -6,7 +6,7 @@ function sleep(ms) {
 async function main() {
   while(true) {
     console.log("Microservices rock!");
-    console.log("Todays thought ", $TODAYS_THOUGHT);
+    console.log(`${TODAYS_THOUGHT} rocks!`);
     await sleep(5000);
   }
 }
